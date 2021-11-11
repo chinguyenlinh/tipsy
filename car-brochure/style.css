@@ -1,11 +1,11 @@
 @font-face {
     font-family: Lexend Deca;
-    src: url(fonts/font1.ttf);
+    src: url(font/font1.ttf);
 }
 
 @font-face {
     font-family: Big Shoulders Display;
-    src: url(fonts/font2.ttf);
+    src: url(font/font2.ttf);
 }
 
 body {
@@ -36,20 +36,14 @@ p {
 }
 
 .big-flex-container {
-    width: 1440px;
-    height: 500px;
-    margin: 10%;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     display: flex;
-}
-
-.flex-container {
-    width: 20%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 div {
+    width: 20%;
     border-radius: 10px;;
 }
 
@@ -104,4 +98,11 @@ button {
     color: hsl(0, 0%, 95%);
     border-color: hsl(0, 0%, 95%);
     border-style: solid;
+}
+
+/*mobile*/
+@media screen and (max-width: 275px) {
+    .big-flex-container {
+        position: fixed;
+    }
 }
